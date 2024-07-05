@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-AppMvcFuncional-66c7bcc0-8809-4d7c-b26d-a0afb1381d03</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\lib\NewFolder1\**" />
+    <Compile Remove="wwwroot\lib\NewFolder2\**" />
+    <Compile Remove="wwwroot\lib\NewFolder3\**" />
+    <Compile Remove="wwwroot\lib\NewFolder\**" />
+    <Content Remove="wwwroot\lib\NewFolder1\**" />
+    <Content Remove="wwwroot\lib\NewFolder2\**" />
+    <Content Remove="wwwroot\lib\NewFolder3\**" />
+    <Content Remove="wwwroot\lib\NewFolder\**" />
+    <EmbeddedResource Remove="wwwroot\lib\NewFolder1\**" />
+    <EmbeddedResource Remove="wwwroot\lib\NewFolder2\**" />
+    <EmbeddedResource Remove="wwwroot\lib\NewFolder3\**" />
+    <EmbeddedResource Remove="wwwroot\lib\NewFolder\**" />
+    <None Remove="wwwroot\lib\NewFolder1\**" />
+    <None Remove="wwwroot\lib\NewFolder2\**" />
+    <None Remove="wwwroot\lib\NewFolder3\**" />
+    <None Remove="wwwroot\lib\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\lib\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\lib\webfonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\lib\webfonts\fa-v4compatibility.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.16" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.16" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.18">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.12" />
+  </ItemGroup>
+
+</Project>
